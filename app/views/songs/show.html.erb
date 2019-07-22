@@ -1,0 +1,10 @@
+<h1><%=@song.name%></h1>
+
+<h2>Artist:  <%=@song.artist.name%></h2>
+
+<h3>Genre:  <%=@song.genre.name.capitalize%></h3>
+
+
+<p><%= link_to(@song.artist.name, artist_path(@artist))%></p>
+<br>
+<p><%= link_to(@song.genre.name, genre_path(@genre))%></p>
