@@ -1,0 +1,14 @@
+<%= form_for @song do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label "Artist" %>
+  <%= f.select :artist_id, @artists.map {|artist| artist.name} %>
+  
+  <%= f.label "Genre" %>
+  <%= f.select :genre_id, @genres.map {|genre| genre.name} %>
+
+  <%= f.submit %>
+<% end %>
+
+  
