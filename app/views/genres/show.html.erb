@@ -1,0 +1,3 @@
+<h1> Genre: <%= @genre.name %></h1>
+
+<% link_to "Delete", genre_path(@genre), :confirm => "Are you sure?", :method => :delete %>
